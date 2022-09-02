@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ShowVideoActivity">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/play_ic"
+        android:id="@+id/ivPlay"
+        android:layout_below="@id/videoView"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ivPause"
+        android:src="@drawable/pause_ic"
+        android:layout_below="@id/videoView"
+        android:layout_toRightOf="@id/ivPlay"
+        android:layout_marginLeft="10dp"/>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btnGoBack"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoView"
+        android:text="Re-Record"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btnSend"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGoBack"
+        android:text="Send To Server"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>
